@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        table{
+            width: 100%;
+            min-height: 100%;
+        }
+         #main ul{
+        list-style-type: none;
+    }
+    #header{
+        height: 64px;
+        text-align: center;
+        background-color: blue;
+        padding: 16px;
+    }
+    #header h1{
+        margin: 0;
+    }
+        #left{
+            display: inline-block;
+            width: 30%;
+            height: 90%;
+            text-align: center;
+            vertical-align: top;
+            font-size: 32px;
+            background-color: white;
+           
+        }
+        #left ul{
+            padding: 0;
+        }
+        #left ul>li {
+            border-bottom: 1px solid;
+        
+        }
+        #left ul>li a{
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        #left ul>li a:hover{
+            background-color: salmon;
+        }
+        #right{
+            display: inline-block;
+            width: 65%;
+        }
+        #footer{
+            text-align: center;
+            padding: 16px;
+            background-color: blue;
+        }
+        .center{
+            text-align: center;
+        }
+        .price::before{
+            content: '$';
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header" >
+           <h1 style="font-size: 48px;vertical-align: middle;"> <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591768674269&di=861a1112b5d006ebe20efaddcaa2aaa6&imgtype=0&src=http%3A%2F%2Fp.geitu.net%2F2%2F7QPzad.jpg%3Fx-oss-process%3Dimage%2Fresize%2Cw_760%2Climit_1" alt="咖啡杯"style="width: 30px;height: 30px;"> 来杯咖啡</h1>
+
+        </div>
+    
+    <div id="left">
+        <ul style="list-style-type: none;">
+            <li>
+                 <a href="#Americano">美式咖啡</a>
+            </li>
+            <li>
+                <a href="#cappuccino">卡布奇诺</a>
+            </li>
+            <li>
+                 <a href="#Espresso">意式咖啡</a>
+            </li>
+            <li style=" border-bottom: none">
+                 <a href="#Macchiato"> 焦糖玛奇朵</a>
+            </li>
+        </ul>
+    </div>
+    <div id="right">
+        <div class="center">
+        <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2294277788,1917484929&fm=26&gp=0.jpg" alt="coffee">
+        </div>
+        <table border="1" style="width: 50%;margin-left: auto;margin-right: auto;">
+            <tr>
+                <th>咖啡</th>
+                <th>价格</th>
+            </tr>
+            <tr>
+                <th>美式咖啡</th>
+                <th>
+                    <span class="price">25.00</span>
+                </th>
+            </tr>
+            <tr>
+                <th>卡布奇诺</th>
+                <th><span class="price">20.00</span></th>
+            </tr>
+            <tr>
+                <th>意式咖啡</th>
+                <th><span class="price">23.00</span></th>
+            </tr>
+            <tr>
+                <th>焦糖玛奇朵</th>
+                <th><span class="price">30.00</span></th>
+            </tr>
+        </table>
+        <h2 id="Americano" style="font-size: 32px;">美式咖啡</h2>
+        <p>
+        “美式咖啡”（英文：Americano，意大利语：Caffè Americano）咖啡的一种，是最普通的咖啡。是使用滴滤式咖啡壶所制作出的黑咖啡，又或者是意式浓缩中加入大量的水制成。
+       美式咖啡口味比较淡。因为一般的萃取时间相对较长（大概四五分钟），所以咖啡因含量较高。</p>
+        <h2 id="cappuccino" style="font-size: 32px;" >卡布奇诺</h2>
+        <p>
+        卡布奇诺是一种加入以同量的意大利特浓咖啡和蒸汽泡沫牛奶相混合的意大利咖啡。此时咖啡的颜色，就像卡布奇诺教会的修士在深褐色的外衣上覆上一条头巾一样，咖啡因此得名.
+        传统的卡布奇诺咖啡是三分之一浓缩咖啡，三分之一蒸汽牛奶和三分之一泡沫牛奶，并在上面撒上小颗粒的肉桂粉末。</p>
+        <h2 id="Espresso" style="font-size: 32px;">意式咖啡</h2>
+        <p>
+        意大利咖啡Espresso是意式咖啡的精髓，他的做法起源于意大利，在意大利文中是“特别快”的意思，其特征乃是利用蒸汽压力，瞬间将咖啡液抽出。
+        所有的牛奶咖啡或花式咖啡都是以Espresso为基础制作出来的。所以Espresso是检验一杯咖啡品质好坏的关键。</p>
+        <h2 id="Macchiato" style="font-size: 32px;">玛奇朵</h2>
+        <p>
+        玛奇朵Macchiato在意大利文里是“印记、烙印”的意思，奶霜漂浮在红茶上面，人们喝的时候，红茶会在入口前先经过奶霜，而奶霜就像瞬间烙印在茶汤上，所以叫玛奇朵。 [1] 
+顾名思义，它的名字焦糖玛奇朵就象征着甜蜜的印记。 玛奇朵咖啡是奶咖啡的一种，它是先将牛奶和香草糖浆混合后再加入奶沫，然后再倒入咖啡，最后在奶沫上淋上网格状焦糖。Caramel Macchiato，是玛奇朵咖啡的名字。
+Caramel 是英文里焦糖的意
+    </div>
+    <div id="footer">
+       <span>版权所有 </span> &copy; pserfree
+    </div>
+    </div>
+</body>
+</html>
