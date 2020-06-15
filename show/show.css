@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-width: 380px;
+  }
+  html {
+    overflow: auto;
+  }
+  /*头部*/
+  .header {
+    background-color: crimson;
+    width: 100%;
+    height: 60px;
+  }
+  .header-box {
+    padding: 15px 0px;
+    vertical-align: middle;
+    width:1200px;
+    margin: 0 auto;
+  }
+  
+  .header .header-box .header-box-left {
+    float: left;
+    vertical-align: middle;
+  }
+  
+  .header .header-box .header-box-right {
+    float: right;
+    padding-top: 5px;
+  }
+  
+  .header .header-box .header-box-left span {
+    color: white;
+  }
+  
+  .header .header-box .header-box-right a {
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+  }
+  
+  .header .header-box .header-title {
+    color: skyblue;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .header .header-box .icon-mobile {
+    float: right;
+    visibility: hidden;
+  }
+  
+  .header .header-box .icon-mobile {
+    float: right;
+    padding: 5px;
+    visibility: hidden;
+    position: relative;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+ 
+  
+  /*中间内容*/
+  .content {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .content p {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .content-title::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 40px);
+    height: 5px;
+    width: 80px;
+    background-color: crimso;
+  }
+  
+  .content-movie {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+  .content-movie-det {
+    background-color: #fef0ef;
+    display: flex;
+    margin: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .content-movie-det img {
+    width: 260px;
+    height: 420px;
+  }
+  
+  .content-game {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+  
+  .content-game-det {
+    background-color: #fef0ef;
+    display: flex;
+    margin: 10px 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content-game-det img {
+    width: 260px;
+    height: 420px;
+  }
+  
+  /*底部*/
+  .button {
+    background-color:crimson;
+    width: 100%;
+    text-align: center;
+  }
+  .button .button-text {
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  
+  .button .button-text .button-text-left {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-top: 70px;
+  }
+  .button .button-text .button-text-left .button-text-left-text {
+    width: 350px;
+    text-align: left;
+  }
+  .button .button-text .button-text-left span {
+    text-align: left;
+    width: 600px;
+  }
+  .button .button-text .button-text-right {
+    width: 20%;
+    margin-top: 30px;
+  }
+  
+  /*自适应*/
+  
+  
+  @media screen and (max-width: 1420px) {
+    .content {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .content-movie-det img {
+      width: 260px;
+      height: 420px;
+    }
+    .content-game-det img {
+      width: 260px;
+      height: 420px;
+    }
+    .button .button-text {
+      width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 1260px) {
+    .header-box{
+      width: 1000px;
+    }
+    .content {
+      width: 1000px;
+      margin: 0 auto;
+    }
+    .content-movie{
+      width: 100%;
+    }
+    .content-movie-det img {
+      width: 200px;
+      height: 320px;
+    }
+    .content-game{
+      width: 100%;
+    }
+    .content-game-det img {
+      width: 200px;
+      height: 320px;
+    }
+    .button .button-text {
+      width: 1000px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .header-box{
+      width: 100%;
+    }
+    .content {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .content-movie-det img {
+      width: 200px;
+      height: 320px;
+    }
+    .content-game-det img {
+      width: 200px;
+      height: 320px;
+    }
+    .button .button-text {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .header-box{
+      width: 700px;
+    }
+    .content {
+      width: 700px;
+      margin: 0 auto;
+    }
+    
+    .content-movie-det img {
+      width: 300px;
+      height: 420px;
+    }
+    .content-game-det img {
+      width: 300px;
+      height: 420px;
+    }
+    .button .button-text {
+      width: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+  
+    .button .button-text-right{
+      padding-right: 50px;
+      
+    }
+    
+  }
+  @media screen and (max-width: 738px) {
+    .header-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 15px 0;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .header .header-box .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .header .header-box .header-box-right {
+      display: none;
+    }
+    .header .header-box .header-box-left {
+      text-align: center;
+      padding-left: 12px;
+    }
+    .button .button-text .button-text-left {
+      text-align: left;
+      padding-right: 4px;
+      padding-left: 10px;
+      margin-left: 0;
+    }
+    .button .button-text .button-text-left .button-text-left-text {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .content {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .content-movie{
+      width: 100%;
+    }
+    .content-game{
+      width: 100%;
+    }
+    .button .button-text {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+    
+    .button .button-text .button-text-right{
+      margin: 30px auto;
+      width: 100%;
+      padding-right: 0;
+    }
+  }
